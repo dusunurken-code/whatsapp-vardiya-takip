@@ -31,10 +31,16 @@ const client = new Client({
     }
 });
 
-// QR Kodu terminalde göster
+// QR Kodu terminalde göster (Render sorunu için güncellendi)
 client.on('qr', (qr) => {
-    console.log('TELEFONUNUZDAN BU QR KODU OKUTUN:');
-    qrcode.generate(qr, { small: true });
+    console.log('====================================================');
+    console.log('RENDER EKRANI QR KODU BOZDUĞU İÇİN GÜVENLİ YÖNTEM:');
+    console.log('1. Lütfen hemen aşağıdaki uzun ve karmakarışık metni kopyalayın:');
+    console.log('\n' + qr + '\n');
+    console.log('2. https://tr.qr-code-generator.com/ adresine gidin.');
+    console.log('3. "METİN" (TEXT) seçeneğine tıklayıp bu kodu yapıştırın.');
+    console.log('4. Sitede oluşan net QR kodu telefonunuza okutun.');
+    console.log('====================================================');
 });
 
 // Başarıyla bağlandığında
