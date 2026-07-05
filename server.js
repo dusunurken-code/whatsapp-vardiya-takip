@@ -1,5 +1,9 @@
 const http = require('http');
 http.createServer((req, res) => res.end('Bot Çalışıyor!')).listen(process.env.PORT || 3000);
+
+// İŞTE EKSİK VEYA YANLIŞ YERDE OLAN SATIR BU:
+const { Client, LocalAuth } = require('whatsapp-web.js'); 
+
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
@@ -16,3 +20,5 @@ const client = new Client({
         ]
     }
 });
+
+// Kodunuzun geri kalanı buradan devam edecek...
