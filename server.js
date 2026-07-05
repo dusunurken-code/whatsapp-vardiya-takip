@@ -11,7 +11,7 @@ let dbMock = {
         "2": { isim: "Oda 2", kullanici: null, baslangicZamani: null },
         "3": { isim: "Oda 3", kullanici: null, baslangicZamani: null }
     },
-    adminNumarasi: "905XXXXXXXXX@c.us" // BURAYI KENDİ NUMARANIZLA DEĞİŞTİRİN
+    adminNumarasi: "905399337692@c.us" // BURAYI KENDİ NUMARANIZLA DEĞİŞTİRİN
 };
 
 const client = new Client({
